@@ -6,3 +6,9 @@ ejecutar: bin/programa
 
 assets/musica.mp3: assets/musica.wav
 		ffmpeg -i assets/musica.wav -codec:a libmp3lame -qscale:a 2 assets/musica.mp3
+
+bin/ejemplo : src/ejemplo.cpp
+	c++ src/ejemplo.cpp -o bin/ejemplo -lftxui-screen	
+	
+ejemplo : bin/ejemplo
+./bin/ejemplo	
