@@ -1,0 +1,60 @@
+name: Build and Release Vaqueros
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install MSYS2
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            mingw-w64-x86_64-gcc
+            mingw-w64-x86_64-make
+            mingw-w64-x86_64-sfml
+            mingw-w64-x86_64-box2d
+      
+      - name: Build Game
+        shell: msys2 {0}
+        run: |
+          cd EjemplosJuego
+          make clean
+          make all
+      
+      - name: Create Release Directory
+        run: |
+          mkdir -p release
+          copy EjemplosJuego\bin\09_Vaqueros.exe release\JuegoProyecto.exe
+          xcopy EjemplosJuego\assets release\assets /E /I /Y
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            release/JuegoProyecto.exe
+            release/assets/**/*
+          body: |
+            # 🎮 Vaqueros: Wild West Duel
+            
+            Descarga el juego compilado y los recursos necesarios.
+            
+            ## Requisitos
+            - Windows 64-bit
+            - Visual C++ Redistributable (si es necesario)
+            
+            ## Instalación
+            1. Extrae el archivo ZIP
+            2. Ejecuta `JuegoProyecto.exe`
+            
+            ¡Que disfrutes el duelo!

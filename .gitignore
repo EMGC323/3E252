@@ -1,0 +1,67 @@
+# Binarios compilados
+*.exe
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Directorios de build
+/bin/
+/build/
+/dist/
+/out/
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+*.lnk
+.Trash-*
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+*~
+.*.swp
+
+# Logs
+*.log
+
+# Node (si se usa para herramientas)
+node_modules/
+npm-debug.log
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Directorios de cache
+__pycache__/
+*.pyc
+.cache/
+
+# Compilación de recursos
+*.gch
+
+# Archivos de proyecto generados
+*.cbp
+*.layout
