@@ -1,25 +1,14 @@
 # 🎮 VAQUEROS: Wild West Duel
 
 > Un juego de duelo del viejo oeste desarrollado en C++ con SFML y Box2D
-
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![C++](https://img.shields.io/badge/language-C%2B%2B-blue.svg)
-![SFML](https://img.shields.io/badge/library-SFML-green.svg)
-![Box2D](https://img.shields.io/badge/physics-Box2D-orange.svg)
-
----
-
+> 
 ## 📋 Descripción del Proyecto
 
 Es un juego estilo **Wild West Gunman** donde controlás un vaquero en épicos duelos. Cuenta con múltiples modos de juego incluyendo Jugador vs Jugador (PvP) y Jugador vs Bot con 3 niveles de dificultad progresiva.
 
----
-
 ## 🎯 Objetivo del Juego
 
 ¡Disfrutar venciendo al bot o a tus amigos en duelos del viejo oeste! Esquiva balas, destruye obstáculos y demuestra quién es el mejor tirador.
-
----
 
 ## 🎮 Controles
 
@@ -170,52 +159,6 @@ make clean            # Limpiar binarios
 
 **Líder de Proyecto**: Eric Misael Godoy Canela (EMGC323)
 
----
-
-## 📈 Estadísticas del Código
-
-```
-Líneas de código: ~1,500 LOC
-Archivos principales: 1 + 12 ejemplos
-Tamaño ejecutable: ~500 KB
-Tamaño con assets: ~5 MB
-FPS objetivo: 60
-Resolución: 800x600px
-```
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Programación Orientada a Objetos (Clases, Structs)  
-✅ Máquinas de Estado (Game State Management)  
-✅ Física 2D (Box2D v3, fuerzas, colisiones)  
-✅ Detección de Colisiones (AABB)  
-✅ Sistemas de Entrada (Keyboard Input)  
-✅ Renderizado 2D (Sprites, formas geométricas)  
-✅ Streaming de Audio (OGG Vorbis)  
-✅ IA Básica (Auto-targeting, pathfinding simple)  
-✅ Build Systems (Makefiles, compilación)  
-✅ Generación Procedural (Mapas aleatorios)  
-
----
-
-## 🐛 Reportar Bugs
-
-¿Encontraste un problema? ¡Ayúdanos a mejorar!
-
-1. Ve a [Issues](../../issues)
-2. Haz clic en "New Issue"
-3. Describe:
-   - Qué pasó
-   - Qué esperabas
-   - Pasos para reproducir
-   - Tu SO
-
----
-
-## 💡 Mejoras Futuras
-
 ### 🎮 Nuevas Características
 - [ ] Multijugador en línea
 - [ ] Modo Torneo
@@ -271,17 +214,6 @@ El proyecto está bajo licencia **MIT**. Ver [LICENSE](LICENSE) para detalles.
 - Arcade retro (Worms, Bomberman)
 - Comunidad global de gamedev
 
----
-
-## 📞 Contacto y Soporte
-
-¿Preguntas o sugerencias?
-- 📧 Abre un [Issue](../../issues)
-- 🔗 [Perfil GitHub](https://github.com/tuusuario)
-- 💬 Discussions en el repositorio
-
----
-
 ## 🎉 ¡Que Disfrutes el Duelo!
 
 ```
@@ -290,15 +222,3 @@ El proyecto está bajo licencia **MIT**. Ver [LICENSE](LICENSE) para detalles.
     │      ¡Que gane el mejor!        │
     └─────────────────────────────────┘
 ```
-
-**Última actualización:** Diciembre 2025
-
----
-
-<div align="center">
-
-⭐ Si te gustó el proyecto, **dale una estrella** ⭐
-
-Made with ❤️ using C++ & SFML
-
-</div>
